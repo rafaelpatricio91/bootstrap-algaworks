@@ -1,0 +1,43 @@
+.logotipo img
+{
+	height: 30px;
+	margin-right: 10px;
+}
+
+.lista-navbar li a
+{
+	color:#FFF;
+	
+}
+
+.perfil
+{
+	width: 300px;
+}
+
+.perfil img
+{
+	float: left;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+.opcoes-minha-conta
+{
+	float: right;
+}
+
+.navbar
+{
+	margin-bottom: 15px;
+}
+
+.cabecalho h1
+{
+	margin: 0;
+}
+
+.busca
+{
+	margin-top: 10px;
+}
