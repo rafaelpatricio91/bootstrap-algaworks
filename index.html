@@ -77,19 +77,19 @@
 
    		<div class="table-responsive">
    			 <table class="dados-os table table-striped table-bordered table-hover">
-   			 	<thead>
+   			 	<thead class="table-head">
    			 		<tr>
    			 			<th>Cod.</th>
    			 			<th>Data</th>
    			 			<th>Cliente</th>
    			 			<th>Valor</th>
-   			 			<th>Funcionários</th>
+   			 			<th>Funcionário</th>
    			 			<th>Status</th>	
    			 			<th></th>
    			 		
    			 		</tr>
    			 	</thead>
-   			 	<tbody>
+   			 	<tbody class="table-body">
    			 		<tr>
    			 			<td>001</td>
    			 			<td>14/05/1999</td>
@@ -98,12 +98,12 @@
    			 			<td>Zé</td>
    			 			<td><span class="badge badge-primary">Em andamento</span></td>
    			 			<td class="text-center">
-   			 				<a href=""><span class="oi oi-check text-success" title="check" aria-hidden="true"></span></a>
-   			 				<a href=""><span class="oi oi-pencil text-warning" title="pencil" aria-hidden="true"></span></a>
-   			 				<a href=""><span class="oi oi-x text-danger" title="x" aria-hidden="true"></span></a>
-   			 			</td>
-   			 		</tr>
-
+   			 				<a href="" title="Finalizar" data-toggle="tooltip"><span class="oi oi-check text-success"  aria-hidden="true"></span></a>
+   			 				<a href="" title="Editar" data-toggle="tooltip"><span class="oi oi-pencil text-warning"  aria-hidden="true"></span></a>
+   			 				<a href="" title="Excluir" data-toggle="tooltip"><span class="oi oi-x text-danger" aria-hidden="true"></span></a>
+                     </td>
+                  </tr>
+   			
    			 		<tr>
    			 			<td>002</td>
    			 			<td>28/09/2001</td>
@@ -112,12 +112,12 @@
    			 			<td>Valdir</td>
    			 			<td><span class="badge badge-success">Em andamento</span></td>
    			 			<td class="text-center">
-   			 				<a href=""><span class="oi oi-check text-success" title="check" aria-hidden="true"></span></a>
-   			 				<a href=""><span class="oi oi-pencil text-warning" title="pencil" aria-hidden="true"></span></a>
-   			 				<a href=""><span class="oi oi-x text-danger" title="x" aria-hidden="true"></span></a>
-   			 			</td>
-   			 		</tr>
-
+   			 				<a href="" title="Finalizar" data-toggle="tooltip"><span class="oi oi-check text-success"  aria-hidden="true"></span></a>
+   			 				<a href="" title="Editar" data-toggle="tooltip"><span class="oi oi-pencil text-warning"  aria-hidden="true"></span></a>
+   			 				<a href="" title="Excluir" data-toggle="tooltip"><span class="oi oi-x text-danger" aria-hidden="true"></span></a>
+                     </td>
+                  </tr>
+   			
    			 		<tr>
    			 			<td>003</td>
    			 			<td>21/04/1845</td>
@@ -126,12 +126,12 @@
    			 			<td>Eurico</td>
    			 			<td><span class="badge badge-danger">Em andamento</span></td>
    			 			<td class="text-center">
-   			 				<a href=""><span class="oi oi-check text-success" title="check" aria-hidden="true"></span></a>
-   			 				<a href=""><span class="oi oi-pencil text-warning" title="pencil" aria-hidden="true"></span></a>
-   			 				<a href=""><span class="oi oi-x text-danger" title="x" aria-hidden="true"></span></a>
-   			 			</td>
-   			 		</tr>
-
+   			 				<a href="" title="Finalizar" data-toggle="tooltip"><span class="oi oi-check text-success"  aria-hidden="true"></span></a>
+   			 				<a href="" title="Editar" data-toggle="tooltip"><span class="oi oi-pencil text-warning" aria-hidden="true"></span></a>
+   			 				<a href="" title="Excluir" data-toggle="tooltip"><span class="oi oi-x text-danger" aria-hidden="true"></span></a>
+                     </td>
+                  </tr>
+   			
    			 		<tr>
    			 			<td>004</td>
    			 			<td>01/02/2011</td>
@@ -140,18 +140,102 @@
    			 			<td>Campello Traíra</td>
    			 			<td><span class="badge badge-warning">Em andamento</span></td>
    			 			<td class="text-center">
-   			 				<a href=""><span class="oi oi-check text-success" title="check" aria-hidden="true"></span></a>
-   			 				<a href=""><span class="oi oi-pencil text-warning" title="pencil" aria-hidden="true"></span></a>
-   			 				<a href=""><span class="oi oi-x text-danger" title="x" aria-hidden="true"></span></a>
-   			 			</td>
-   			 		</tr>
-   			 	</tbody>
+   			 				<a href="" title="Finalizar" data-toggle="tooltip"><span class="oi oi-check text-success"  aria-hidden="true"></span></a>
+   			 				<a href="" title="Editar" data-toggle="tooltip"><span class="oi oi-pencil text-warning"  aria-hidden="true"></span></a>
+   			 				<a href="" title="Excluir" data-toggle="tooltip"><span class="oi oi-x text-danger" aria-hidden="true"></span></a>
+                     </td>
+                  </tr>
+               </tbody>
+
    			 </table>
    			 </div>
+
+             <footer class="row">
+                <div class="col-sm-6">
+                   <button class="btn btn-primary" data-toggle="modal" data-target="#novaOs">Nova Ordem de Serviço</button>
+                </div>
+                <div class="col-sm-6">
+                   <ul class="pagination">
+                     <li class="page-item"><a class="page-link" href=""><span> << </span></a></li>
+                     <li class="page-item active"><a class="page-link" href=""><span> 1 </span></a></li>
+                     <li class="page-item"><a class="page-link" href=""><span> 2 </span></a></li>
+                     <li class="page-item"><a class="page-link" href=""><span> 3 </span></a></li>
+                     <li class="page-item"><a class="page-link" href=""><span> 4 </span></a></li>
+                     <li class="page-item"><a class="page-link" href=""><span> 5 </span></a></li>
+                     <li class="page-item"><a class="page-link" href=""><span> >> </span></a></li>
+                   </ul>
+                </div>
+             </footer>
 		</div>
+
+      <div class="modal fade" id="novaOs">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title">Nova Ordem de Serviço</h4>
+               </div>
+               <form>
+                  <div class="modal-body">
+                     <div class="row">
+                        <div class="form-group col-xs-12">
+                           <label>Código da OS</label>
+                           <p class="form-control-static">16701</p>
+                        </div>
+                     </div> 
+                     <div class="row">
+                        <div class="form-group col-sm-5">
+                           <label for="cliente">Cliente</label>
+                           <select id="cliente" class="form-control">
+                              <option value="">Selecione</option>
+                              <option value="1">Zé</option>
+                              <option value="2">Arnold</option>
+                              <option value="3">Salah</option>
+                              <option value="4">Paulão</option>
+                           </select>
+                        </div>
+                         <div class="row">
+                        <div class="form-group col-sm-7">
+                           <label for="servicos">Serviços</label>
+                           <select id="servicos" class="form-control">
+                              <option value="">Selecione</option>
+                              <option value="1">Conserto</option>
+                              <option value="2">Troca</option>
+                              <option value="3">Manutenção</option>
+                              <option value="4">Outro</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="form-group has-error col-sm-12">
+                           <label class="control-label" for="obs">Observação</label>
+                           <textarea id="obs" class="form-control " rows="3"></textarea>
+                        </div>
+                     </div>
+                     <div class="row">
+                    <div class="form-group has-error col-sm-8">
+                     <label class="control-label" for="valor">Valor</label>
+                  <div class="input-group">
+                     <div class="input-group-prepend">
+                     <span class="input-group-text">R$</span>
+                  </div>
+                  <input type="text" name="valor" class="form-control">
+               </div>
+               </div>
+            </div>
+                  </div>
+
+                  <div class="modal-footer">
+                     <button type="reset" class="btn btn-danger">Limpar</button>
+                     <button type="submit" class="btn btn-primary">Salvar</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
 
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
 	</body>
 
 </html>
